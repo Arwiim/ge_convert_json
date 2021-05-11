@@ -1,0 +1,93 @@
+{
+  "evaluation_parameters": {},
+  "results": [
+    {
+      "exception_info": {
+        "raised_exception": false,
+        "exception_message": null,
+        "exception_traceback": null
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_to_exist",
+        "meta": {
+          "notes": {
+            "content": "Esperar que exista la columna date.",
+            "format": "markdown"
+          }
+        },
+        "kwargs": {
+          "column": "date",
+          "result_format": {
+            "result_format": "SUMMARY",
+            "partial_unexpected_count": 20
+          }
+        }
+      },
+      "result": {},
+      "meta": {},
+      "success": true
+    },
+    {
+      "exception_info": {
+        "raised_exception": false,
+        "exception_message": null,
+        "exception_traceback": null
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_match_regex",
+        "meta": {
+          "notes": { "content": "formato de fecha", "format": "markdown" }
+        },
+        "kwargs": {
+          "column": "date",
+          "regex": "\\d{4}-\\d{2}-\\d{2}",
+          "result_format": {
+            "result_format": "SUMMARY",
+            "partial_unexpected_count": 20
+          }
+        }
+      },
+      "result": {
+        "element_count": 82,
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "unexpected_percent_total": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "partial_unexpected_list": [],
+        "partial_unexpected_index_list": [],
+        "partial_unexpected_counts": []
+      },
+      "meta": {},
+      "success": true
+    }
+  ],
+  "statistics": {
+    "evaluated_expectations": 2,
+    "successful_expectations": 2,
+    "unsuccessful_expectations": 0,
+    "success_percent": 100.0
+  },
+  "meta": {
+    "great_expectations_version": "0.13.19",
+    "expectation_suite_name": "appsfly",
+    "run_id": {
+      "run_time": "2021-05-04T17:51:43.010695+00:00",
+      "run_name": "20210504T175143.010695Z"
+    },
+    "batch_kwargs": {
+      "datasource": "pandas_s3",
+      "path": "s3://datalake-prod-stage/naranjax/ar/appsflyer/partnersbydatereportandroid/dt=2021-02-23/part-00000-656363ee-fc5d-4f00-981e-38a1618bab05.c000",
+      "reader_method": "read_parquet",
+      "expectation_suite_names": "users.warning"
+    },
+    "batch_markers": {
+      "ge_load_time": "20210504T175141.201102Z",
+      "pandas_data_fingerprint": "855256b2b7066259b1e65566e0fb2d94"
+    },
+    "batch_parameters": null,
+    "validation_time": "20210504T175143.021719Z"
+  },
+  "success": true
+}

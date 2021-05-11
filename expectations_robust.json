@@ -1,0 +1,424 @@
+{
+    "evaluation_parameters": {},
+    "results": [
+        {
+            "result": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_message": null,
+                "exception_traceback": null
+            },
+            "expectation_config": {
+                "expectation_type": "expect_column_to_exist",
+                "kwargs": {
+                    "column": "date",
+                    "result_format": {
+                        "result_format": "SUMMARY",
+                        "partial_unexpected_count": 20
+                    }
+                },
+                "meta": {
+                    "notes": {
+                        "content": "Esperar que exista la columna date.",
+                        "format": "markdown"
+                    }
+                }
+            },
+            "meta": {},
+            "success": true
+        },
+        {
+            "result": {
+                "element_count": 82,
+                "missing_count": 0,
+                "missing_percent": 0.0,
+                "unexpected_count": 0,
+                "unexpected_percent": 0.0,
+                "unexpected_percent_total": 0.0,
+                "unexpected_percent_nonmissing": 0.0,
+                "partial_unexpected_list": [],
+                "partial_unexpected_index_list": [],
+                "partial_unexpected_counts": []
+            },
+            "exception_info": {
+                "raised_exception": false,
+                "exception_message": null,
+                "exception_traceback": null
+            },
+            "expectation_config": {
+                "expectation_type": "expect_column_values_to_match_regex",
+                "kwargs": {
+                    "column": "date",
+                    "regex": "\\d{4}-\\d{2}-\\d{2}",
+                    "result_format": {
+                        "result_format": "SUMMARY",
+                        "partial_unexpected_count": 20
+                    }
+                },
+                "meta": {
+                    "notes": {
+                        "content": "formato de fecha",
+                        "format": "markdown"
+                    }
+                }
+            },
+            "meta": {},
+            "success": true
+        },
+        {
+            "result": {
+                "observed_value": [
+                    "date",
+                    "agency_pmd_af_prt",
+                    "media_source_pid",
+                    "campaign_c",
+                    "impressions",
+                    "clicks",
+                    "ctr",
+                    "installs",
+                    "conversion_rate",
+                    "sessions",
+                    "loyal_users",
+                    "loyal_users_installs",
+                    "total_revenue",
+                    "total_cost",
+                    "roi",
+                    "arpu",
+                    "average_ecpi",
+                    "pago_de_servicios_finalizar_transaccion_unique_users",
+                    "pago_de_servicios_finalizar_transaccion_event_counter",
+                    "tarjeta_naranja_descargar_resumen_unique_users",
+                    "tarjeta_naranja_descargar_resumen_event_counter",
+                    "tarjeta_naranja_pagar_unique_users",
+                    "tarjeta_naranja_pagar_event_counter"
+                ],
+                "details": {
+                    "mismatched": [
+                        {
+                            "Expected Column Position": 0,
+                            "Expected": "agency_pmd_af_prt",
+                            "Found": "date"
+                        },
+                        {
+                            "Expected Column Position": 1,
+                            "Expected": "date",
+                            "Found": "agency_pmd_af_prt"
+                        },
+                        {
+                            "Expected Column Position": 23,
+                            "Expected": "particion_ingesta",
+                            "Found": null
+                        },
+                        {
+                            "Expected Column Position": 24,
+                            "Expected": "filename",
+                            "Found": null
+                        },
+                        {
+                            "Expected Column Position": 25,
+                            "Expected": "deleted",
+                            "Found": null
+                        },
+                        {
+                            "Expected Column Position": 26,
+                            "Expected": "timestamp_dl",
+                            "Found": null
+                        }
+                    ]
+                }
+            },
+            "exception_info": {
+                "raised_exception": false,
+                "exception_message": null,
+                "exception_traceback": null
+            },
+            "expectation_config": {
+                "expectation_type": "expect_table_columns_to_match_ordered_list",
+                "kwargs": {
+                    "column_list": [
+                        "agency_pmd_af_prt",
+                        "date",
+                        "media_source_pid",
+                        "campaign_c",
+                        "impressions",
+                        "clicks",
+                        "ctr",
+                        "installs",
+                        "conversion_rate",
+                        "sessions",
+                        "loyal_users",
+                        "loyal_users_installs",
+                        "total_revenue",
+                        "total_cost",
+                        "roi",
+                        "arpu",
+                        "average_ecpi",
+                        "pago_de_servicios_finalizar_transaccion_unique_users",
+                        "pago_de_servicios_finalizar_transaccion_event_counter",
+                        "tarjeta_naranja_descargar_resumen_unique_users",
+                        "tarjeta_naranja_descargar_resumen_event_counter",
+                        "tarjeta_naranja_pagar_unique_users",
+                        "tarjeta_naranja_pagar_event_counter",
+                        "particion_ingesta",
+                        "filename",
+                        "deleted",
+                        "timestamp_dl"
+                    ],
+                    "result_format": {
+                        "result_format": "SUMMARY",
+                        "partial_unexpected_count": 20
+                    }
+                },
+                "meta": {
+                    "notes": {
+                        "content": "Lista para ver fallos",
+                        "format": "markdown"
+                    }
+                }
+            },
+            "meta": {},
+            "success": false
+        },
+        {
+            "result": {
+                "observed_value": 82
+            },
+            "exception_info": {
+                "raised_exception": false,
+                "exception_message": null,
+                "exception_traceback": null
+            },
+            "expectation_config": {
+                "expectation_type": "expect_table_row_count_to_be_between",
+                "kwargs": {
+                    "max_value": 93,
+                    "min_value": 76,
+                    "result_format": {
+                        "result_format": "SUMMARY",
+                        "partial_unexpected_count": 20
+                    }
+                },
+                "meta": {
+                    "BasicSuiteBuilderProfiler": {
+                        "confidence": "very low"
+                    }
+                }
+            },
+            "meta": {},
+            "success": true
+        },
+        {
+            "result": {
+                "observed_value": 23
+            },
+            "exception_info": {
+                "raised_exception": false,
+                "exception_message": null,
+                "exception_traceback": null
+            },
+            "expectation_config": {
+                "expectation_type": "expect_table_column_count_to_equal",
+                "kwargs": {
+                    "value": 23,
+                    "result_format": {
+                        "result_format": "SUMMARY",
+                        "partial_unexpected_count": 20
+                    }
+                },
+                "meta": {
+                    "BasicSuiteBuilderProfiler": {
+                        "confidence": "very low"
+                    }
+                }
+            },
+            "meta": {},
+            "success": true
+        },
+        {
+            "result": {
+                "element_count": 82,
+                "unexpected_count": 2,
+                "unexpected_percent": 2.4390243902439024,
+                "unexpected_percent_total": 2.4390243902439024,
+                "partial_unexpected_list": []
+            },
+            "exception_info": {
+                "raised_exception": false,
+                "exception_message": null,
+                "exception_traceback": null
+            },
+            "expectation_config": {
+                "expectation_type": "expect_column_values_to_not_be_null",
+                "kwargs": {
+                    "column": "clicks",
+                    "mostly": 0.876,
+                    "result_format": {
+                        "result_format": "SUMMARY",
+                        "partial_unexpected_count": 20
+                    }
+                },
+                "meta": {
+                    "BasicSuiteBuilderProfiler": {
+                        "confidence": "very low"
+                    }
+                }
+            },
+            "meta": {},
+            "success": true
+        },
+        {
+            "result": {
+                "observed_value": 1.0,
+                "element_count": 82,
+                "missing_count": 2,
+                "missing_percent": 2.4390243902439024
+            },
+            "exception_info": {
+                "raised_exception": false,
+                "exception_message": null,
+                "exception_traceback": null
+            },
+            "expectation_config": {
+                "expectation_type": "expect_column_min_to_be_between",
+                "kwargs": {
+                    "column": "clicks",
+                    "max_value": 2.0,
+                    "min_value": 0.0,
+                    "result_format": {
+                        "result_format": "SUMMARY",
+                        "partial_unexpected_count": 20
+                    }
+                },
+                "meta": {
+                    "BasicSuiteBuilderProfiler": {
+                        "confidence": "very low"
+                    }
+                }
+            },
+            "meta": {},
+            "success": true
+        },
+        {
+            "result": {
+                "observed_value": 2022.0,
+                "element_count": 82,
+                "missing_count": 2,
+                "missing_percent": 2.4390243902439024
+            },
+            "exception_info": {
+                "raised_exception": false,
+                "exception_message": null,
+                "exception_traceback": null
+            },
+            "expectation_config": {
+                "expectation_type": "expect_column_max_to_be_between",
+                "kwargs": {
+                    "column": "clicks",
+                    "max_value": 2060.0,
+                    "min_value": 2058.0,
+                    "result_format": {
+                        "result_format": "SUMMARY",
+                        "partial_unexpected_count": 20
+                    }
+                },
+                "meta": {
+                    "BasicSuiteBuilderProfiler": {
+                        "confidence": "very low"
+                    }
+                }
+            },
+            "meta": {},
+            "success": false
+        },
+        {
+            "result": {
+                "observed_value": 90.9125,
+                "element_count": 82,
+                "missing_count": 2,
+                "missing_percent": 2.4390243902439024
+            },
+            "exception_info": {
+                "raised_exception": false,
+                "exception_message": null,
+                "exception_traceback": null
+            },
+            "expectation_config": {
+                "expectation_type": "expect_column_mean_to_be_between",
+                "kwargs": {
+                    "column": "clicks",
+                    "max_value": 132.3855421686747,
+                    "min_value": 130.3855421686747,
+                    "result_format": {
+                        "result_format": "SUMMARY",
+                        "partial_unexpected_count": 20
+                    }
+                },
+                "meta": {
+                    "BasicSuiteBuilderProfiler": {
+                        "confidence": "very low"
+                    }
+                }
+            },
+            "meta": {},
+            "success": false
+        },
+        {
+            "result": {
+                "element_count": 82,
+                "unexpected_count": 0,
+                "unexpected_percent": 0.0,
+                "unexpected_percent_total": 0.0,
+                "partial_unexpected_list": []
+            },
+            "exception_info": {
+                "raised_exception": false,
+                "exception_message": null,
+                "exception_traceback": null
+            },
+            "expectation_config": {
+                "expectation_type": "expect_column_values_to_not_be_null",
+                "kwargs": {
+                    "column": "agency_pmd_af_prt",
+                    "result_format": {
+                        "result_format": "SUMMARY",
+                        "partial_unexpected_count": 20
+                    }
+                },
+                "meta": {
+                    "BasicSuiteBuilderProfiler": {
+                        "confidence": "very low"
+                    }
+                }
+            },
+            "meta": {},
+            "success": true
+        }
+    ],
+    "statistics": {
+        "evaluated_expectations": 10,
+        "successful_expectations": 7,
+        "unsuccessful_expectations": 3,
+        "success_percent": 70.0
+    },
+    "meta": {
+        "great_expectations_version": "0.13.19",
+        "expectation_suite_name": "appsfly",
+        "run_id": {
+            "run_name": "20210507T133205.393753Z",
+            "run_time": "2021-05-07T13:32:05.393753+00:00"
+        },
+        "batch_kwargs": {
+            "datasource": "pandas_s3",
+            "path": "s3://datalake-prod-stage/naranjax/ar/appsflyer/partnersbydatereportandroid/dt=2021-02-23/part-00000-656363ee-fc5d-4f00-981e-38a1618bab05.c000",
+            "reader_method": "read_parquet",
+            "expectation_suite_names": "users.warning"
+        },
+        "batch_markers": {
+            "ge_load_time": "20210507T133203.520382Z",
+            "pandas_data_fingerprint": "855256b2b7066259b1e65566e0fb2d94"
+        },
+        "batch_parameters": null,
+        "validation_time": "20210507T133205.399942Z"
+    },
+    "success": false
+}
